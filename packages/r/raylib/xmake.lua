@@ -29,7 +29,7 @@ package("raylib")
     if not (is_plat("macosx") and is_arch("x86_64")) then
         add_deps("cmake >=3.11")
     end
-
+ 
     if is_plat("macosx") then
         add_frameworks("CoreVideo", "CoreGraphics", "AppKit", "IOKit", "CoreFoundation", "Foundation")
     elseif is_plat("windows") then
